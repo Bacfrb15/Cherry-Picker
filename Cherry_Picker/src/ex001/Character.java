@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ex001;
 
 import java.awt.Color;
@@ -73,8 +68,4 @@ public class Character {
     public void setMoveSpeed(int moveSpeed) {
         this.moveSpeed = moveSpeed;
     }
-    
-    
-    
-    
 }

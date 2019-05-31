@@ -50,11 +50,6 @@ public class DataBase {
         return theInstance;
     }
     
-    public void createTables()
-    {
-        
-    }
-    
     public void createTablePlayer() throws Exception 
     {
 //        String sql = "DROP TABLE IF EXISTS Player;"

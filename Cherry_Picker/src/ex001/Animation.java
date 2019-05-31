@@ -148,10 +148,6 @@ public class Animation implements KeyListener {
             case KeyEvent.VK_S:
                 character.setY(character.getY() + character.getMoveSpeed());
                 break;
-            case KeyEvent.VK_B:
-                character.setX(w / 2);
-                character.setY(h / 2);
-                break;
             default:
                 break;
         }

@@ -30,9 +30,5 @@ public class Player {
     @Override
     public String toString() {
         return String.format("%-3d %-10s %-5d", id, name, highscore);
-    }
-    
-    
-    
-    
+    }  
 }
