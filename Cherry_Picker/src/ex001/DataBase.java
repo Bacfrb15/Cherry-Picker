@@ -121,27 +121,4 @@ public class DataBase {
         return p;
         
     }
-    
-    public static void main(String[] args) {
-        try{
-            
-            DataBase db = DataBase.getInstance();
-            db.createTablePlayer();
-//            db.insertTableData();
-            
-            for(Player player : db.getPlayers())
-            {
-                System.out.println(player.toString());
-            }
-            
-            Scanner sc = new Scanner(System.in);
-            String name = sc.nextLine();
-            System.out.println(db.getPlayerByName(name));
-                   
-        }
-        catch(Exception e)
-        {
-            System.out.println("lmao" + e);
-        }
-    }
 }
