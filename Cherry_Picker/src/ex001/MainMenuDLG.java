@@ -9,6 +9,8 @@ import java.awt.Panel;
 import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
@@ -190,6 +192,7 @@ public class MainMenuDLG extends javax.swing.JDialog {
     }
 
     public void initializeLeaderboard(ArrayList<Player> players) throws Exception {
+        Collections.sort(players, (Player p1, Player p2) -> p2.getHighscore() - p1.getHighscore());
         for (int i = 0; i < players.size(); i++) {
             Player pl = players.get(i);
             dlm.addElement(pl.toString());
