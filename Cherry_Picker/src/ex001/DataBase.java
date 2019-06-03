@@ -97,23 +97,4 @@ public class DataBase {
         }
         return players;
     }
-    
-    public Player getPlayerByName(String name) throws Exception
-    {
-        Player p = null;
-        
-        String sql = "SELECT * FROM Player WHERE name = ?";
-        PreparedStatement ps = conn.prepareStatement(sql);
-        ps.setString(1, name);
-        
-        ResultSet rs = ps.executeQuery();
-        if(rs.next())
-        {
-            p = new Player(rs.getInt("id"),
-                           rs.getString("name"),
-                           rs.getInt("highscore"));
-        }
-        return p;
-        
-    }
 }
